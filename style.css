@@ -3,6 +3,27 @@
     font-family: fantasy;
 }
 button {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    border-radius: 8px;
+    padding: 32px 32px;
+    
+}
+button:hover{
+    background-color: red;
+}
+
+.message{
+    margin-bottom: 20px;
+    font-size: 1em;
+    background-color: green;
+    width:340px;
+    text-align: center;
+    color:white;
+}
+.instruction{
+    width:340px;
 }

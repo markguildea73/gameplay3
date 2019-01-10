@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="message">Guess Combo</div>
+    <div class="message">In the four boxed are random numbers between 1 and 10: Choose a number</div>
     <div class="game"></div>
     <button type="button">Start</button>
-    <div><small>Instructions for the Game: Guess the number combination, if the box is blue your low, if the box is red your too high, and if its green your correct.</small></div>
+    <div class= "instruction"><small>Instructions for the Game: Guess the number combination, if the box is blue your low, if the box is red your too high, and if its green your correct.</small></div>
     
     <script>
         const gameArea = document.querySelector(".game");
@@ -69,7 +69,9 @@
             el.max=9;
             el.min=0;
             el.size=1;
-            el.style.width="50px";
+            el.style.width="80px";
+            el.style.height="50px";
+            el.style.fontSize="3em";
             el.classList.add("numb");
             el.order=x;
             el.correct=Math.floor(Math.random()*10);
@@ -78,16 +80,6 @@
             gameArea.appendChild(el);
         }
         }
-
-
-        
-        
-        
-        
-        
-        
-        
-        
     </script>
     
 </body>
